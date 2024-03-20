@@ -1,0 +1,19 @@
+﻿@model Test.Models.userTBL
+
+@{
+    ViewData["Title"] = "About";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<body>
+    <form action="About" method="post">
+        <p>Please enter your first and last name:</p>
+        <input type="text" name="Name" placeholder="@Html.DisplayNameFor(model => model.Name)" required />
+        <input type="text" name="Surname" placeholder="@Html.DisplayNameFor(model => model.Surname)" required />
+        <input type="text" name="Email" placeholder="@Html.DisplayNameFor(model => model.Email)" required />
+        <button type="submit">Submit</button>
+    </form>
+</body>
